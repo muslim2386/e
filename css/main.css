@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,700&display=swap');
+.wrapper{
+    padding: 0%;
+}
+.toggle-menu{
+    display:none
+}
+.section1{    
+    height: 560px;
+    background-image: linear-gradient(60deg, rgba(30, 235, 57, 0.6) 0%, rgba(240, 75, 10, 0.60) 100%), url(../img/eshki_logo.png);
+    width: 100%;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    fill-opacity: 0;
+    display:none;
+}
+.menu>ul>li{
+    list-style: none;
+    margin: 0 20px;
+    
+}
+.menu>ul>li>a{
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+    color:black
+}
+.menu>ul{
+    display: flex;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-right: 45px;
+}
+.welcometobestclass{
+    color:white;
+    text-align:center;
+    font-size:100px ;
+    font-family:'Roboto', sans-serif;
+}
+.aboutus{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.aboutus_text{
+    width: 500px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+}
+.section2_parent{
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+}
+.section2{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+@media (max-width:650px){
+    header{
+        width:100%;
+    }
+    .section1{
+        background-size: 100%;
+        background-image: url(../img/eshki_logo.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        justify-content: center;
+    }
+    .logo{
+        display: flex;
+    }
+    .menu{
+        display: none;
+        /* width: 60%;
+        justify-content: center;
+        margin-right: none; */
+        
+    }
+    .welcometobestclass{
+        font-size: 100%;
+        position: relative;
+        top:200px;
+        color:#C0C0C0;
+    }
+    .menu>ul>li>a{
+        font-size: 100%;
+    }
+    .menu>ul{
+        width: 60%;
+    }
+    .section2{
+        width: 100%;
+    }
+}
